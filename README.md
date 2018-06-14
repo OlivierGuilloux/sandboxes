@@ -12,7 +12,7 @@ Build the images from centos6: `docker build -t pdf2svg:centos6 pdf2svg_centos6`
 Run the test:
 
 ```
-docker run -m=1G --rm -v $PWD:/shared pdf2svg:centos6 /shared/somefile.pdf /shared/svg/content%d.zvgz all
+docker run -m=1G --rm -v $PWD:/shared pdf2svg:centos6 pdf2svg /shared/somefile.pdf /shared/svg/content%d.zvgz all
 ```
 
 Build the images from centos7: `docker build -t pdf2svg:centos7 pdf2svg_centos7`.
@@ -20,5 +20,5 @@ Build the images from centos7: `docker build -t pdf2svg:centos7 pdf2svg_centos7`
 
 Run the test:
 ```
-docker run -m=1G --rm -v $PWD:/shared pdf2svg:centos7 /shared/somefile.pdf /shared/svg/content%d.zvgz all
+docker run -m=1G --rm -v $PWD:/shared pdf2svg:centos7 pdf2svg /shared/somefile.pdf /shared/svg/content%d.zvgz all
 ```
